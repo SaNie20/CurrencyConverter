@@ -14,9 +14,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
         if let amount = Double(inputTextField.text!) {
             dollarAmount = amount
         }
-        poundLabel.text = "\(dollarAmount * poundRate)"
-        yenLabel.text = "\(dollarAmount * yenRate)"
-        euroLabel.text = "\(dollarAmount * euroRate)"
+        poundLabel.text = "\(dollarAmount * poundRate) £"
+        yenLabel.text = "\(dollarAmount * yenRate) ¥"
+        euroLabel.text = "\(dollarAmount * euroRate) €"
         dollarAmount = 0.0
     }
     
